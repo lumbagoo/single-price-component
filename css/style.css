@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.box {
+  margin: 2em auto;
+  max-width: 350px;
+}
+.box .card {
+  padding: 2em;
+  background-color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.box .card__title {
+  font-size: 2.4rem;
+  color: hsl(218, 22%, 67%);
+}
+.box .card__subtitle {
+  font-size: 1.7rem;
+  color: hsl(71, 73%, 54%);
+  padding: 2em 0;
+}
+.box .card__info {
+  font-size: 1.6rem;
+  line-height: 1.5em;
+  color: hsl(179, 62%, 43%);
+}
+.box .offer-box .price-box {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+  background-color: hsl(179, 62%, 43%);
+  color: #fff;
+}
+.box .offer-box .price-box__title {
+  font-size: 1.8rem;
+  margin-bottom: 1em;
+}
+.box .offer-box .price-box .amount {
+  display: flex;
+  align-items: center;
+}
+.box .offer-box .price-box .amount .value {
+  margin-right: 0.7em;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.box .offer-box .price-box .amount .period {
+  font-size: 1.6rem;
+  opacity: 0.6;
+}
+.box .offer-box .price-box .info {
+  padding: 1em 0;
+  font-size: 1.6rem;
+  opacity: 0.8;
+}
+.box .offer-box .price-box .button {
+  margin-top: 1em;
+  padding: 1em 7em;
+  border-radius: 5px;
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+}
+.box .offer-box .why-us {
+  padding: 3em;
+  background-color: hsl(218, 22%, 67%);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.box .offer-box .why-us__title {
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  color: #fff;
+}
+.box .offer-box .why-us .benefits {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #fff;
+  opacity: 0.8;
+}
+.box .offer-box .why-us .benefits li {
+  margin-bottom: 0.5em;
+}
+
+@media (min-width: 1000px) {
+  .box {
+    max-width: 700px;
+  }
+  .box .card {
+    padding: 3em;
+  }
+  .box .card__title {
+    font-weight: bold;
+    font-size: 2.7rem;
+  }
+  .box .offer-box {
+    display: flex;
+    width: 100%;
+  }
+  .box .offer-box .price-box {
+    border-bottom-left-radius: 5px;
+    width: 50%;
+  }
+  .box .offer-box .price-box .button {
+    margin-top: 3em;
+    padding: 1em 5em;
+  }
+  .box .offer-box .why-us {
+    width: 50%;
+    border-bottom-left-radius: 0;
+  }
+  .box .offer-box .why-us__title {
+    margin: 0;
+  }
+  .box .offer-box .why-us .benefits {
+    margin-top: 3.5em;
+    font-size: 1.5rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,151 @@
+@use './colors.scss' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Karla', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: $light-gray;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 1200px;
+}
+
+.box {
+	margin: 2em auto;
+	max-width: 350px;
+
+	.card {
+		padding: 2em;
+		background-color: #fff;
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+		&__title {
+			font-size: 2.4rem;
+			color: $grayish-blue;
+		}
+		&__subtitle {
+			font-size: 1.7rem;
+			color: $bright-yellow;
+			padding: 2em 0;
+		}
+		&__info {
+			font-size: 1.6rem;
+			line-height: 1.5em;
+			color: $cyan;
+		}
+	}
+
+	.offer-box {
+		.price-box {
+			display: flex;
+			flex-direction: column;
+			padding: 3em;
+			background-color: $cyan;
+			color: #fff;
+
+			&__title {
+				font-size: 1.8rem;
+				margin-bottom: 1em;
+			}
+
+			.amount {
+				display: flex;
+				align-items: center;
+				.value {
+					margin-right: 0.7em;
+					font-size: 3rem;
+					font-weight: bold;
+				}
+				.period {
+					font-size: 1.6rem;
+					opacity: 0.6;
+				}
+			}
+			.info {
+				padding: 1em 0;
+				font-size: 1.6rem;
+				opacity: 0.8;
+			}
+			.button {
+				margin-top: 1em;
+				padding: 1em 7em;
+				border-radius: 5px;
+				border: none;
+				background-color: $bright-yellow;
+				color: #fff;
+			}
+		}
+
+		.why-us {
+			padding: 3em;
+			background-color: $grayish-blue;
+			border-bottom-left-radius: 5px;
+			border-bottom-right-radius: 5px;
+			&__title {
+				margin-bottom: 1em;
+				font-size: 1.8rem;
+				color: #fff;
+			}
+			.benefits {
+				list-style: none;
+				font-size: 1.4rem;
+				color: #fff;
+				opacity: 0.8;
+				li {
+					margin-bottom: 0.5em;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1000px) {
+	.box {
+		max-width: 700px;
+		.card {
+			padding: 3em;
+
+			&__title {
+				font-weight: bold;
+				font-size: 2.7rem;
+			}
+		}
+
+		.offer-box {
+			display: flex;
+			width: 100%;
+			.price-box {
+				border-bottom-left-radius: 5px;
+				width: 50%;
+				.button {
+					margin-top: 3em;
+					padding: 1em 5em;
+				}
+			}
+			.why-us {
+				width: 50%;
+				border-bottom-left-radius: 0;
+				&__title {
+					margin: 0;
+				}
+				.benefits {
+					margin-top: 3.5em;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
